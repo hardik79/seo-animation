@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lottie Animation Demo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body style="background-image: url('Purple-Background.jpg');">
+  <div id="animation-container" style="width:500px;margin: 0 auto;" ></div>
+
+  <script>
+    var animationPath = 'animationWithHand.json';
+    // var animationPath = 'BankingApp.json';
+    
+    var animationContainer = document.getElementById('animation-container');
+
+    var animation = lottie.loadAnimation({
+      container: animationContainer,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: animationPath
+    });
+  </script>
+</body>
+</html>
